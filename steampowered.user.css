@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name           Steam mobile layout fix
+@namespace      github.com/Yonsh/my-custom-styles
+@version        1.0.0
+@description    Fix Steam mobile version layout
+@author         Yonsh
+==/UserStyle== */
+@-moz-document url-prefix("https://store.steampowered.com/app/") {
+  html.responsive .glance_ctn_responsive_left {
+    width: unset;
+  }
+
+  html.responsive .glance_ctn_responsive_right {
+    clear: left;
+  }
+
+  .glance_ctn .user_reviews_summary_row .column,
+  .glance_ctn .dev_row .column,
+  .glance_ctn .release_date .column {
+    white-space: unset;
+  }
+}
